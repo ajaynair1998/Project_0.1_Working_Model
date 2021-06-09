@@ -50,5 +50,5 @@ model.load_weights(os.path.join(__dirname, saved_model, 'my_model.h5'))
 
 prediction = model.predict(img_array)
 
-print("The Probability of the Image being Positive is \t" + str(prediction[0][0] * 100) + '\nand negative is\t' + str(
+print("The Probability of the Image being Negative is \t" + str(prediction[0][0] * 100) + '\nand Positive is\t' + str(
     prediction[0][1] * 100))
